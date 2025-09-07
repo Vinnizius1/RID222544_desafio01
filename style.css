@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.hero-section {
+  background: #303030;
+  color: #ffffff;
+  padding: 206px 0 0 62px;
+  min-height: 475px;
+}
+
+.hero-title {
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 72px;
+  margin-bottom: 16px;
+}
+
+.hero-subtitle {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 38px;
+}
