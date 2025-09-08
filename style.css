@@ -93,8 +93,64 @@
   /* Define uma transição suave para a opacidade */
   transition: opacity 0.5s ease-in-out;
 }
-
 #image-content.loaded {
   /* Fica totalmente visível quando carregada */
   opacity: 1;
+}
+
+/* Contact Section */
+.contact-section {
+  min-height: 550px;
+  background-color: #303030;
+  padding: 65px 75px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#contact-tile {
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* Form Contact */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 50px;
+  gap: 30px;
+}
+
+.form-input {
+  width: 500px;
+  height: 72px;
+  border: none;
+  border-radius: 10px;
+  padding-left: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.form-input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.submit-button {
+  margin-top: 40px;
+  width: 270px;
+  height: 72px;
+  background-color: #c07212;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.submit-button:hover {
+  transform: scale(1.1);
 }
