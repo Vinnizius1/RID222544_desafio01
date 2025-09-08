@@ -5,6 +5,7 @@
   font-family: "Inter", sans-serif;
 }
 
+/* Hero Section */
 .hero-section {
   background: #303030;
   color: #ffffff;
@@ -23,4 +24,33 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 38px;
+}
+
+/* Statistics Section */
+.stats-section {
+  background-color: #f9f9f9;
+  min-height: 229px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 40px 0;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.stat-number {
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.stat-description {
+  font-weight: 400;
+  font-size: 20px;
+  margin-top: 8px;
 }
