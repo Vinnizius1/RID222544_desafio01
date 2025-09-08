@@ -12,25 +12,25 @@ O layout da página foi baseado no protótipo disponibilizado no Figma.
 
 ## ✨ Funcionalidades
 
--   Layout responsivo baseado no design do Figma.
--   Formulário para captura de leads (Nome, Email e Telefone).
--   Integração com Google Sheets via Sheet Monkey para armazenamento dos dados do formulário.
+- Layout responsivo baseado no design do Figma.
+- Formulário para captura de leads (Nome, Email e Telefone).
+- Integração com Google Sheets via Sheet Monkey para armazenamento dos dados do formulário.
 
 ## 💻 Tecnologias Utilizadas
 
--   HTML5
--   CSS3
--   JavaScript
--   Sheet Monkey (para integração com o formulário)
+- HTML5
+- CSS3
+- JavaScript
+- Sheet Monkey (para integração com o formulário)
 
 ## 🚀 Deploy
 
 O site do projeto está hospedado no Netlify e pode ser acessado através do link abaixo:
 
--   **[Link do Site](URL_DO_SEU_SITE_NO_NETLIFY_AQUI)**
+- **[Link do Site](https://desafio01-dnc-rid222544.netlify.app/)**
 
 ## 📊 Planilha de Leads
 
 Os dados coletados pelo formulário são armazenados na seguinte planilha do Google Sheets:
 
--   **[Link da Planilha](URL_DA_SUA_PLANILHA_AQUI)**
+- **[Link da Planilha](https://docs.google.com/spreadsheets/d/1UQB8ga8toXVEVcMK-CKyc77yAjC2i88N3mhkM7cleYg/edit?pli=1&gid=0#gid=0)**
