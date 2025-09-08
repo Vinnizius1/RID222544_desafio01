@@ -51,6 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
 const contactForm = document.getElementById("contactForm");
 const nomeInput = document.getElementById("nome");
 const emailInput = document.getElementById("email");
+const submitButton = document.getElementById("submitButton");
 
 if (contactForm) {
   contactForm.addEventListener("submit", function (event) {
@@ -90,9 +91,16 @@ function showToast(message, type = "success") {
 
   toastContainer.appendChild(toast);
 
+  if(submitButton) {
+    submitButton.disabled = true;
+  }
+
   // Remove o toast após 3 segundos
   setTimeout(() => {
     toast.classList.remove("show");
+    if(submitButton) {
+      submitButton.disabled = false;
+    }
     // Espera a animação de saída terminar para remover o elemento
     setTimeout(() => {
       toast.remove();
