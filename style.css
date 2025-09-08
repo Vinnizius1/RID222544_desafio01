@@ -54,3 +54,35 @@
   font-size: 20px;
   margin-top: 8px;
 }
+
+/* About Section */
+.about-section {
+  display: flex;
+  padding: 75px 50px 90px 75px;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 900px;
+}
+
+#about-title {
+  font-size: 40px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 1.5rem;
+}
+
+#about-text {
+  color: #000;
+  line-height: 30px;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+#image-content {
+  /* position: relative; */
+  margin-left: auto;
+}
