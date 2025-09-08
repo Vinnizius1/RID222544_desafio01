@@ -225,6 +225,7 @@ Formulário de Contato: Faz com que os campos de input ocupem quase toda a largu
   .hero-title {
     font-size: 40px;
     line-height: 48px;
+    margin-bottom: 50px;
   }
 
   .hero-subtitle {
