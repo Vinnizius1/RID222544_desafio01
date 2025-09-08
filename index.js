@@ -45,3 +45,57 @@ document.addEventListener("DOMContentLoaded", () => {
   // Finalmente, dizemos ao nosso observador para começar a "vigiar" o elemento 'lazyImage'.
   imageObserver.observe(lazyImage);
 });
+
+/*  */
+// LÓGICA DO FORMULÁRIO E TOAST
+const contactForm = document.getElementById("contactForm");
+const nomeInput = document.getElementById("nome");
+const emailInput = document.getElementById("email");
+
+if (contactForm) {
+  contactForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const formData = new FormData(contactForm);
+    const url = contactForm.action;
+
+    fetch(url, {
+      method: "POST",
+      body: formData,
+    })
+      .then((response) => {
+        if (response.ok) {
+          showToast("Formulário enviado com sucesso!");
+          nomeInput.value = "";
+          emailInput.value = "";
+        } else {
+          throw new Error("Falha no envio do formulário.");
+        }
+      })
+      .catch((error) => {
+        console.error("Erro:", error);
+        showToast("Ocorreu um erro ao enviar. Tente novamente.", "error");
+      });
+  });
+}
+
+// FUNÇÃO PARA MOSTRAR O TOAST
+function showToast(message, type = "success") {
+  const toastContainer = document.getElementById("toastContainer");
+  if (!toastContainer) return;
+
+  const toast = document.createElement("div");
+  toast.className = `toast toast-${type} show`;
+  toast.textContent = message;
+
+  toastContainer.appendChild(toast);
+
+  // Remove o toast após 3 segundos
+  setTimeout(() => {
+    toast.classList.remove("show");
+    // Espera a animação de saída terminar para remover o elemento
+    setTimeout(() => {
+      toast.remove();
+    }, 400);
+  }, 3000);
+}

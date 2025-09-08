@@ -61,11 +61,16 @@
     <!-- FORMULÁRIO DE CONTATO -->
     <section class="contact-section">
       <h2 id="contact-tile">Conheça mais sobre nossos serviços:</h2>
-      <form action="#" method="post" id="contactForm" class="contact-form">
+      <form
+        action="https://api.sheetmonkey.io/form/vmfjfL34Z3jmfaDPoZtq3s"
+        method="post"
+        id="contactForm"
+        class="contact-form"
+      >
         <input
           type="text"
           id="nome"
-          name="nome"
+          name="Name"
           placeholder="Nome"
           class="form-input"
           required
@@ -73,10 +78,15 @@
         <input
           type="email"
           id="email"
-          name="email"
+          name="Email"
           placeholder="Email"
           class="form-input"
           required
+        />
+        <input
+          type="hidden"
+          name="Created"
+          value="x-sheetmonkey-current-date-time"
         />
         <button type="submit" class="submit-button">Fale Conosco</button>
       </form>
