@@ -201,3 +201,81 @@ footer {
 .toast-error {
   background-color: #dc3545;
 }
+
+/* ============== RESPONSIVIDADE ============== */
+/* Aqui está um resumo das principais alterações que o código fará:
+Seção Hero: Centraliza o texto e diminui as fontes.
+Seção de Estatísticas: Empilha os números um sobre o outro.
+Seção Sobre: Coloca a imagem embaixo do texto e ajusta os tamanhos.
+Formulário de Contato: Faz com que os campos de input ocupem quase toda a largura da tela, para facilitar o preenchimento. */
+
+@media (max-width: 768px) {
+  /* Hero Section */
+  .hero-section {
+    padding: 100px 20px;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .hero-subtitle {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  /* Statistics Section */
+  .stats-section {
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px 20px;
+  }
+
+  .stat-item {
+    align-items: center;
+  }
+
+  /* About Section */
+  .about-section {
+    flex-direction: column-reverse; /* Imagem primeiro, depois texto */
+    padding: 50px 20px;
+    text-align: center;
+  }
+
+  #image-content {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 30px auto; /* Margem para separar da seção de cima */
+  }
+
+  #about-title {
+    font-size: 32px;
+  }
+
+  #about-text {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  /* Contact Section */
+  .contact-section {
+    padding: 50px 20px;
+    text-align: center;
+  }
+
+  #contact-tile {
+    font-size: 28px;
+  }
+
+  .form-input {
+    width: 90%;
+    font-size: 18px;
+  }
+
+  .submit-button {
+    width: 220px;
+    font-size: 20px;
+  }
+}
